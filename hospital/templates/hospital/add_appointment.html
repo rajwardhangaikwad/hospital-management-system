@@ -1,0 +1,23 @@
+{% extends 'hospital/base.html' %}
+
+{% block content %}
+
+<div class="card-box">
+
+    <h2 class="mb-4">Add Appointment</h2>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-success">
+            Save Appointment
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

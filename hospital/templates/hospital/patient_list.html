@@ -1,0 +1,79 @@
+{% extends 'hospital/base.html' %}
+
+{% block content %}
+
+<div class="card-box">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <h2>Patients List</h2>
+
+        <form method="GET" class="d-flex">
+
+            <input type="text"
+                   name="q"
+                   class="form-control me-2"
+                   placeholder="Search Patient">
+
+            <button class="btn btn-success">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+
+    <table class="table table-hover">
+
+        <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Disease</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% for patient in patients %}
+
+            <tr>
+
+                <td>{{ patient.id }}</td>
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.age }}</td>
+                <td>{{ patient.gender }}</td>
+                <td>{{ patient.disease }}</td>
+                <td>{{ patient.phone }}</td>
+
+                <td>
+
+                    <a href="{% url 'edit_patient' patient.id %}"
+                       class="btn btn-warning btn-sm">
+                        Edit
+                    </a>
+
+                    <a href="{% url 'delete_patient' patient.id %}"
+                       class="btn btn-danger btn-sm">
+                        Delete
+                    </a>
+
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}
