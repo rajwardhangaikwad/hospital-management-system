@@ -1,8 +1,8 @@
-# 🏥 Hospital Management System
+# Hospital Management System
 
-A web-based Hospital Management System developed using Python and Django to manage patient records and simplify hospital administration.
+A web-based Hospital Management System developed using Python and Django to manage patient records and simplify basic hospital administration.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python
 * Django
@@ -11,68 +11,66 @@ A web-based Hospital Management System developed using Python and Django to mana
 * CSS
 * Bootstrap
 
-## ✨ Features
+## Features
 
 * Patient record management
-* Add, view, update, and delete patient records
+* Create, view, update, and delete patient records
 * User authentication
-* Dashboard for hospital information
+* Dashboard for hospital-related information
 * Form validation
 * Responsive user interface
 
-## ⚙️ Installation and Setup
+## Installation and Setup
 
-### 1. Clone the repository
+1. Clone the repository:
 
-```bash
-git clone https://github.com/rajwardhangaikwad/hospital-management-system.git
-```
+   ```bash
+   git clone https://github.com/rajwardhangaikwad/hospital-management-system.git
+   ```
 
-### 2. Open the project folder
+2. Open the project directory:
 
-```bash
-cd hospital-management-system
-```
+   ```bash
+   cd hospital-management-system
+   ```
 
-### 3. Create a virtual environment
+3. Create a virtual environment:
 
-```bash
-python -m venv venv
-```
+   ```bash
+   python -m venv venv
+   ```
 
-### 4. Activate the environment (Windows)
+4. Activate the virtual environment on Windows:
 
-```bash
-venv\Scripts\activate
-```
+   ```bash
+   venv\Scripts\activate
+   ```
 
-### 5. Install dependencies
+5. Install the dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 6. Run database migrations
+6. Run database migrations:
 
-```bash
-python manage.py migrate
-```
+   ```bash
+   python manage.py migrate
+   ```
 
-### 7. Start the server
+7. Start the development server:
 
-```bash
-python manage.py runserver
-```
+   ```bash
+   python manage.py runserver
+   ```
 
-Open your browser at `http://127.0.0.1:8000/`.
+8. Open your browser and visit:
 
-## 👨‍💻 Developer
+   http://127.0.0.1:8000/
+
+## Developer
 
 **Rajwardhan Gaikwad**
 
 * GitHub: https://github.com/rajwardhangaikwad
 * LinkedIn: https://www.linkedin.com/in/rajwardhangaikwad/
-
----
-
-*This project was developed for learning and demonstrating web application development using Django.*
